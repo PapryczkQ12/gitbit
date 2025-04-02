@@ -259,6 +259,15 @@
             const element = document.getElementById(key);
             if (element) element.textContent = fields[key];
         });
+
+        // Add functionality to the "Zaloguj się" button
+        const loginButton = document.querySelector('.login_button'); // Replace with the actual class or ID of the button
+        if (loginButton) {
+            loginButton.onclick = function() {
+                // Add your login logic here
+                alert('Zaloguj się button clicked!');
+            };
+        }
     });
 </script>
 </body>
