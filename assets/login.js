@@ -64,3 +64,13 @@ eye.addEventListener('click', () => {
         input.value = original;
     }
 });
+
+// Ensure the form submission is handled properly
+document.querySelector('form').addEventListener('submit', function (event) {
+    // Example: Add any validation logic here if needed
+    const passwordInput = document.querySelector('.password_input');
+    if (!passwordInput.value) {
+        event.preventDefault(); // Prevent navigation if validation fails
+        alert('Proszę wprowadzić hasło.');
+    }
+});
