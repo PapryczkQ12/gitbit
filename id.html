@@ -260,12 +260,11 @@
             if (element) element.textContent = fields[key];
         });
 
-        // Add functionality to the "Zaloguj się" button
+        // Update "Zaloguj się" button to navigate to home.html
         const loginButton = document.querySelector('.login_button'); // Replace with the actual class or ID of the button
         if (loginButton) {
             loginButton.onclick = function() {
-                // Add your login logic here
-                alert('Zaloguj się button clicked!');
+                window.location.href = 'home.html';
             };
         }
     });
